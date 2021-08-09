@@ -10,14 +10,29 @@ body {
 }
 .menu{
     float: right;
+    top: 0px;
+    display: inline;
 }
 
 li {
     padding: 0px;
-    margin: 0px;
+    margin-right: 40px;
     text-align: center;
     display:inline-block;
     vertical-align:top;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 0.9rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(242, 107, 56);
 }
 
 .logo{
@@ -25,6 +40,52 @@ li {
     font-weight: bold;
     font-size: 30px;
     letter-spacing: 0.3em;
+    display: inline;
+}
+
+footer{
+    position:absolute;
+    bottom: 50px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: lightslategrey;
+}
+
+@keyframes heartbeat
+{
+    0%
+    {
+        transform: scale( .75 );
+    }
+    20%
+    {
+        transform: scale( 1 );
+    }
+    40%
+    {
+        transform: scale( .75 );
+    }
+    60%
+    {
+        transform: scale( 1 );
+    }
+    80%
+    {
+        transform: scale( .75 );
+    }
+    100%
+    {
+        transform: scale( .75 );
+    }
+}
+
+.beat
+{
+    position: page;
+    font-size: 10rem;
+    width: 50px;
+    height: 50px;
+    animation: heartbeat 1s infinite;
 }
 
 
