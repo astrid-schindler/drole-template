@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 .main{
-    background-color: #ffffff;
+    background-color: #fff5f7;
     margin: 30px;
     padding: 30px;
     height: 88vh;
@@ -46,9 +46,16 @@ a:hover {
 footer{
     position:absolute;
     bottom: 50px;
+}
+
+.copyright{
     font-weight: 300;
     font-size: 0.8rem;
     color: lightslategrey;
+}
+
+.social{
+
 }
 
 @keyframes heartbeat
@@ -79,14 +86,24 @@ footer{
     }
 }
 
+.inline{
+    font-size: 5rem;
+    margin: auto 0;
+}
+
 .beat
 {
-    position: page;
     font-size: 10rem;
     color: crimson;
     width: 50px;
     height: 50px;
     animation: heartbeat 1s infinite;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
