@@ -23,7 +23,6 @@ li {
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     font-size: 0.9rem;
-
 }
 
 a{
@@ -51,7 +50,7 @@ footer{
 .copyright{
     font-weight: 300;
     font-size: 0.8rem;
-    color: lightslategrey;
+    color: #2a2a2a;
 }
 
 .social{
