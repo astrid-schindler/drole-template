@@ -1,0 +1,8 @@
+.main{
+    background-color: #deb3b9;
+    margin: 30px;
+    padding: 30px;
+    /*height: 88vh;*/
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}

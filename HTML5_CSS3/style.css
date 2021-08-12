@@ -1,95 +1,20 @@
+/*ATOMS*/
 @import "atoms/button/button.css";
 @import "atoms/image/image.css";
 @import "atoms/text/text.css";
+@import "atoms/beat-animation/beat.css";
+/*MOLECULES*/
+@import "molecules/footer/footer.css";
+@import "molecules/header/header.css";
+@import "molecules/header/header.css";
+/*ORGANISMS*/
+@import "organisms/main/main.css";
+/*TEMPLATES*/
 @import "templates/grid/grid.css";
 
 body {
     background-color: crimson;
     font-family: 'Roboto Mono', monospace;
-}
-.main{
-    background-color: #deb3b9;
-    margin: 30px;
-    padding: 30px;
-    /*height: 88vh;*/
-    height: calc(100vh - 60px);
-    overflow-y: auto;
-}
-.menu{
-    float: right;
-    top: 0;
-    display: inline;
-}
-
-li {
-    padding: 0;
-    margin-right: 40px;
-    text-align: center;
-    display:inline-block;
-    vertical-align:top;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    font-size: 0.9rem;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: crimson;
-}
-
-.logo{
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 0.3em;
-    display: inline;
-}
-
-footer{
-    position:absolute;
-    bottom: 50px;
-}
-
-.copyright{
-    font-weight: 300;
-    font-size: 0.8rem;
-    color: #2a2a2a;
-}
-
-.social{
-
-}
-
-@keyframes heartbeat
-{
-    0%
-    {
-        transform: scale( .75 );
-    }
-    20%
-    {
-        transform: scale( 1 );
-    }
-    40%
-    {
-        transform: scale( .75 );
-    }
-    60%
-    {
-        transform: scale( 1 );
-    }
-    80%
-    {
-        transform: scale( .75 );
-    }
-    100%
-    {
-        transform: scale( .75 );
-    }
 }
 
 .inline{
@@ -97,20 +22,7 @@ footer{
     margin: auto 0;
 }
 
-.beat
-{
-    font-size: 10rem;
-    color: crimson;
-    width: 50px;
-    height: 50px;
-    animation: heartbeat 1s infinite;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+
 
 
 

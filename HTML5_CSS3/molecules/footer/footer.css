@@ -1,0 +1,14 @@
+footer{
+    position:absolute;
+    bottom: 50px;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #2a2a2a;
+}
+
+.social{
+
+}
