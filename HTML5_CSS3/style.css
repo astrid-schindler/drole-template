@@ -1,3 +1,8 @@
+@import "atoms/button/button.css";
+@import "atoms/image/image.css";
+@import "atoms/text/text.css";
+@import "templates/grid/grid.css";
+
 body {
     background-color: crimson;
     font-family: 'Roboto Mono', monospace;
