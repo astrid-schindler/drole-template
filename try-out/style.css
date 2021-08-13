@@ -78,7 +78,26 @@ a:hover {
 .divCopyright {
     padding-top: 40px;
     padding-left: 20px;
+    color: #ababab;
     grid-area: 12 / 1 / 13 / 7;
+}
+
+.content{
+    grid-area: 3 / 2 / 12 / 13;
+
+}
+
+.content-text{
+    grid-area: 4 / 8 / 12 / 13;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 500;
+    padding-left: 100px;
+
+}
+
+.content-img{
+    width: 800px;
 }
 
 .divSocial {
