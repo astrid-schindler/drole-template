@@ -11,7 +11,7 @@
 @import "organisms/main/main.css";
 /*TEMPLATES*/
 @import "templates/grid/grid.css";
-
+^^
 body {
     background-color: crimson;
     font-family: 'Roboto Mono', monospace;

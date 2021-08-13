@@ -1,0 +1,74 @@
+body{
+    background-color: coral;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: white;
+    border: 30px solid coral;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.divAll {
+    grid-area: 1 / 1 / 13 / 13;
+
+}
+
+.divHeader {
+    grid-area: 1 / 1 / 2 / 13;
+
+
+}
+
+.divFooter {
+    grid-area: 12 / 1 / 13 / 13;
+
+}
+
+.divLogo {
+    padding: 20px;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.divMenu {
+    padding-top: 20px;
+    grid-area: 1 / 8 / 2 / 13;
+
+}
+
+.divCopyright {
+    padding-top: 40px;
+    padding-left: 20px;
+    grid-area: 12 / 1 / 13 / 7;
+}
+
+.divSocial {
+    padding-top: 40px;
+    grid-area: 12 / 11 / 13 / 13;
+}
+
+.divMidAll {
+    grid-area: 2 / 1 / 12 / 13;
+}
+
+.divMidMidText{
+    grid-area: 2 / 4 / 12 / 10;
+}
+
+.divPicture {
+    grid-area: 3 / 5 / 7 / 9;
+    background-color: tomato;
+}
+
+.divText {
+    grid-area: 8 / 5 / 11 / 9;
+    background-color: steelblue;
+}
