@@ -2,12 +2,9 @@ body{
     background-color: white;
     /*
     background: linear-gradient(63deg, rgba(255,255,255,1) 0%, rgba(241,238,229,1) 60%);
-
      */
     font-family: antarctican-mono, sans-serif;
-
     font-weight: 400;
-
     font-style: normal;
 }
 
@@ -57,8 +54,8 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto repeat(1, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -85,16 +82,19 @@ body{
     padding: 20px;
     display: inline;
     font-weight: 600;
+    margin: 16px;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     grid-area: 1 / 1 / 2 / 3;
     height: 80px;
+    align-self: center;
 }
 
 .divMenu {
     padding: 20px;
-    grid-area: 1 / 8 / 2 / 13;
+    grid-area: 1 / 4 / 2 / 13;
+    justify-self: end;
     display: inline;
     height: 80px;
 }
@@ -113,7 +113,7 @@ a {
 }
 
 a:hover {
-    color: crimson;
+    color: #c9792f;
 }
 
 .divCopyright {
@@ -126,74 +126,92 @@ a:hover {
 
 .content{
     grid-area: 2 / 2 / 7 / 7;
+
+
 }
 
 .content-text{
     grid-area: 2 / 8 / 6 / 12;
     color: #000000;
-    padding-left: 100px;
-    font-size: 60px;
+    padding-left: 60px;
+    font-size: 50px;
     font-weight: 300;
-    animation: float3 4s ease-in-out infinite;
-
+    /*animation: float3 4s ease-in-out infinite;
+     */
 }
 
 .content-img{
     width: 800px;
 
     overflow: hidden;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    -webkit-filter: grayscale(100%);
     transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+    /*animation: float 6s ease-in-out infinite;
+     */
 }
 
 .content2{
-    grid-area: 5 / 7 / 9 / 13;
+    grid-area: 5 / 7 / 9 / 12;
     padding-top: 80px;
+    justify-self: end;
 }
 
 .content-text2{
     grid-area: 9 / 8 / 10 / 13;
     color: #000000;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
     text-align: left;
-    animation: float3 6s ease-in-out infinite;
+    /* animation: float3 6s ease-in-out infinite;
+     */
 }
 
 .content-img2{
     width: 650px;
     overflow: hidden;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translatey(0px);
-    animation: float2 6s ease-in-out infinite;
+    -webkit-filter: grayscale(100%);
+    /* animation: float2 6s ease-in-out infinite;
+     */
 }
 
 .content3{
-    grid-area: 7 / 2 / 13 / 6;
+    grid-area: 7 / 2 / 10 / 6;
     padding-top: 100px;
 }
 
 .content-text3{
     grid-area: 12 / 1 / 8 / 7;
     color: #000000;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
     text-align: right;
-    animation: float3 6s ease-in-out infinite;
+    /*animation: float3 6s ease-in-out infinite;
+     */
+}
+
+img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 .content-img3{
     width: 750px;
     overflow: hidden;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    -webkit-filter: grayscale(100%);
     transform: translatey(0px);
-    animation: float2 6s ease-in-out infinite;
+    /*animation: float2 6s ease-in-out infinite;
+     */
+}
+
+.content-img1 .content-img2 .content-img3:hover {
+    transform: scale(1.1);
 }
 
 .divSocial {
     padding-top: 40px;
-    grid-area: 13 / 11 / 13 / 13;
+    grid-area: 13 / 5 / 13 / 13;
+    justify-self: end;
 }
 
 .divMidAll {
@@ -202,16 +220,6 @@ a:hover {
 
 .divMidMidText{
     grid-area: 2 / 4 / 12 / 10;
-}
-
-.divPicture {
-    grid-area: 3 / 5 / 7 / 9;
-    background-color: tomato;
-}
-
-.divText {
-    grid-area: 8 / 5 / 11 / 9;
-    background-color: steelblue;
 }
 
 .lightbox {
