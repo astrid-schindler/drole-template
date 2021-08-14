@@ -85,6 +85,7 @@ body{
     margin: 16px;
     font-size: 1.2rem;
     text-transform: uppercase;
+    color: #5b9457;
     letter-spacing: 5px;
     grid-area: 1 / 1 / 2 / 3;
     height: 80px;
@@ -104,8 +105,8 @@ li {
     display:inline-block;
     font-weight: 400;
     font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+
+    letter-spacing: 1px;
 }
 
 a {
@@ -114,7 +115,7 @@ a {
 }
 
 a:hover {
-    color: #c9792f;
+    color: #5b9457;
 }
 
 .divCopyright {
@@ -133,9 +134,18 @@ a:hover {
 
 .content-text{
     grid-area: 2 / 8 / 6 / 12;
-    color: #000000;
+    color: #5b9457;
     padding-left: 60px;
     font-size: 50px;
+    font-weight: 600;
+    /*animation: float3 4s ease-in-out infinite;
+     */
+}
+
+.simple-text{
+    grid-area: 6 / 8 / 4 / 12;
+    color: #000000;
+    padding-left: 60px;
     font-weight: 400;
     /*animation: float3 4s ease-in-out infinite;
      */
@@ -153,7 +163,7 @@ a:hover {
 
 .content2{
     grid-area: 5 / 7 / 9 / 12;
-    padding-top: 80px;
+    padding-top: 180px;
     justify-self: end;
 }
 
@@ -177,16 +187,19 @@ a:hover {
 }
 
 .content3{
-    grid-area: 7 / 2 / 10 / 6;
-    padding-top: 100px;
+    grid-area: 8 / 1 / 12 / 6;
+    padding-left: 50px;
+    padding-top: 50px;
+
 }
 
 .content-text3{
-    grid-area: 12 / 1 / 8 / 7;
-    color: #000000;
+    grid-area: 6 / 2 / 9 / 7;
+    color: #5b9457;
+    padding-top: 150px;
     font-size: 50px;
-    font-weight: 300;
-    text-align: right;
+    font-weight: 600;
+    text-align: center;
     /*animation: float3 6s ease-in-out infinite;
      */
 }
