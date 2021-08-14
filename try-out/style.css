@@ -105,6 +105,7 @@ li {
     font-weight: 400;
     font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 a {
@@ -135,7 +136,7 @@ a:hover {
     color: #000000;
     padding-left: 60px;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 400;
     /*animation: float3 4s ease-in-out infinite;
      */
 }
