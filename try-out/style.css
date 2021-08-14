@@ -1,5 +1,9 @@
 body{
     background-color: white;
+    /*
+    background: linear-gradient(63deg, rgba(255,255,255,1) 0%, rgba(241,238,229,1) 60%);
+
+     */
     font-family: antarctican-mono, sans-serif;
 
     font-weight: 400;
@@ -7,19 +11,54 @@ body{
     font-style: normal;
 }
 
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translate(-20px , -10px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translate(20px , 10px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float3 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-40px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    background-color: white;
-    border: 30px solid white;
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    grid-template-rows: auto repeat(1, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -30,13 +69,16 @@ body{
 
 .divHeader {
     border-bottom: 0.01em solid #eae9e9;
-    grid-area: 1 / 1 / 2 / 13;
+    grid-area: 1 / 1 / 1 / 13;
+    height: 100px;
+
 
 }
 
 .divFooter {
     border-top: 0.01em solid #eae9e9;
-    grid-area: 12 / 1 / 13 / 13;
+    grid-area: 13 / 1 / 13 / 13;
+    height: 80px;
 }
 
 .divLogo {
@@ -47,12 +89,14 @@ body{
     text-transform: uppercase;
     letter-spacing: 5px;
     grid-area: 1 / 1 / 2 / 3;
+    height: 80px;
 }
 
 .divMenu {
     padding: 20px;
     grid-area: 1 / 8 / 2 / 13;
     display: inline;
+    height: 80px;
 }
 
 li {
@@ -76,46 +120,80 @@ a:hover {
     padding-top: 40px;
     padding-left: 20px;
     color: #ababab;
-    grid-area: 12 / 1 / 13 / 7;
+    grid-area: 13 / 1 / 13 / 7;
+    height: 80px;
 }
 
 .content{
-    grid-area: 3 / 2 / 12 / 13;
+    grid-area: 2 / 2 / 7 / 7;
 }
 
 .content-text{
-    grid-area: 4 / 8 / 12 / 13;
+    grid-area: 2 / 8 / 6 / 12;
     color: #000000;
+    padding-left: 100px;
     font-size: 60px;
     font-weight: 300;
-    padding-left: 100px;
+    animation: float3 4s ease-in-out infinite;
+
 }
 
 .content-img{
     width: 800px;
+
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
 }
 
 .content2{
-    grid-area: 8 / 6 / 12 / 13;
+    grid-area: 5 / 7 / 9 / 13;
+    padding-top: 80px;
 }
 
 .content-text2{
-    grid-area: 12 / 1 / 6 / 6;
+    grid-area: 9 / 8 / 10 / 13;
     color: #000000;
     font-size: 60px;
     font-weight: 300;
-    padding-left: 100px;
-    padding-top: 500px;
-    text-align: right;
+    text-align: left;
+    animation: float3 6s ease-in-out infinite;
 }
 
 .content-img2{
     width: 650px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float2 6s ease-in-out infinite;
+}
+
+.content3{
+    grid-area: 7 / 2 / 13 / 6;
+    padding-top: 100px;
+}
+
+.content-text3{
+    grid-area: 12 / 1 / 8 / 7;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: right;
+    animation: float3 6s ease-in-out infinite;
+}
+
+.content-img3{
+    width: 750px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float2 6s ease-in-out infinite;
 }
 
 .divSocial {
     padding-top: 40px;
-    grid-area: 12 / 11 / 13 / 13;
+    grid-area: 13 / 11 / 13 / 13;
 }
 
 .divMidAll {
