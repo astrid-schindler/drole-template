@@ -3,17 +3,14 @@
 @import url(modules/organisms/teaser/teaser.css);
 @import url(modules/atoms/animation/animation.css);
 @import url(modules/atoms/image/image.css);
+@import url(modules/atoms/headline/headline.css);
 
 body{
     background-color: white;
-    /*
-    background: linear-gradient(63deg, rgba(255,255,255,1) 0%, rgba(241,238,229,1) 60%);
-     */
     font-family: antarctican-mono, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
 
 main{
     display: contents;
@@ -30,12 +27,5 @@ main{
     margin-right: 80px;
 }
 
-.divAll {
-    grid-area: 1 / 1 / 13 / 13;
-}
 
-h1{
-    font-size: 50px;
-    font-weight: 400;
-    color: #5b9457;
-}
+
