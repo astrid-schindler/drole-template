@@ -50,8 +50,18 @@ body{
     }
 }
 
+.box{
+    position: fixed;
+    height: 99px;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 50;
+}
+
 header{
     display: contents;
+    position: fixed;
 }
 
 footer{
@@ -60,10 +70,11 @@ footer{
 
 main{
     display: contents;
+
 }
 
 .parent {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto repeat(1, 1fr);
     grid-column-gap: 25px;
@@ -80,7 +91,6 @@ main{
     border-bottom: 0.01em solid #eae9e9;
     grid-area: 1 / 1 / 1 / 13;
     height: 100px;
-
 
 }
 
@@ -102,6 +112,8 @@ main{
     grid-area: 1 / 1 / 2 / 3;
     height: 80px;
     align-self: center;
+    position: fixed;
+    z-index: 100;
 }
 
 .divMenu {
@@ -110,6 +122,9 @@ main{
     justify-self: end;
     display: inline;
     height: 80px;
+    position: fixed;
+    right: 60px;
+    z-index: 100;
 }
 
 li {
